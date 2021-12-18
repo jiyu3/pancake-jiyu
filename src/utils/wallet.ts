@@ -14,13 +14,27 @@ export const setupNetwork = async () => {
     try {
       await provider.request({
         method: 'wallet_addEthereumChain',
+        // 2021-12-17 jiyu modified
+        // params: [
+        //   {
+        //     chainId: `0x${chainId.toString(16)}`,
+        //     chainName: 'Binance Smart Chain Mainnet',
+        //     nativeCurrency: {
+        //       name: 'BNB',
+        //       symbol: 'bnb',
+        //       decimals: 18,
+        //     },
+        //     rpcUrls: nodes,
+        //     blockExplorerUrls: [`${BASE_BSC_SCAN_URL}/`],
+        //   },
+        // ],
         params: [
           {
             chainId: `0x${chainId.toString(16)}`,
-            chainName: 'Binance Smart Chain Mainnet',
+            chainName: 'Shibuya Network',
             nativeCurrency: {
-              name: 'BNB',
-              symbol: 'bnb',
+              name: 'SBY',
+              symbol: 'sby',
               decimals: 18,
             },
             rpcUrls: nodes,

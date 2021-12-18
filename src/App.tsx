@@ -93,9 +93,9 @@ const App: React.FC = () => {
             <Route path="/pools">
               <Pools />
             </Route>
-            <Route path="/lottery">
+            {/* <Route path="/lottery">
               <Lottery />
-            </Route>
+            </Route> */}
             <Route path="/ifo">
               <Ifos />
             </Route>
@@ -108,15 +108,16 @@ const App: React.FC = () => {
             <Route path="/create-profile">
               <ProfileCreation />
             </Route>
-            <Route path="/competition">
+            {/* 2021-12-16 jiyu modified */}
+            {/* <Route path="/competition">
               <TradingCompetition />
-            </Route>
-            <Route exact path="/prediction">
+            </Route> */}
+            {/* <Route exact path="/prediction">
               <Predictions />
             </Route>
             <Route path="/prediction/leaderboard">
               <PredictionsLeaderboard />
-            </Route>
+            </Route> */}
             <Route exact path="/voting">
               <Voting />
             </Route>
@@ -127,10 +128,11 @@ const App: React.FC = () => {
               <Proposal />
             </Route>
 
+            {/* 2021-12-16 jiyu modified */}
             {/* NFT */}
-            <Route path="/nfts">
+            {/* <Route path="/nfts">
               <NftMarket />
-            </Route>
+            </Route> */}
 
             <Route path="/pancake-squad">
               <PancakeSquad />
